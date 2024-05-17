@@ -1,0 +1,155 @@
+/* Set font family */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0; /* Menghapus margin default dari body */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #273c75; /* Biru tua */
+    color: #fff; /* Putih */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0; /* Menghapus margin default dari ul */
+    padding: 0; /* Menghapus padding default dari ul */
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff; /* Putih */
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.menu ul li a:hover {
+    background-color: #fbc531; /* Emas */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.deskripsi {
+    font-size: 20px;
+    color: #273c75; /* Biru tua */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #273c75; /* Biru tua */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #273c75; /* Biru tua */
+    margin-bottom: 10px;
+}
+
+/* Animation */
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Background image for Tentang Saya */
+section#TentangSaya {
+    background-image: url("../images/moody.jpg");
+    background-size: cover; /* Menyesuaikan ukuran background dengan konten */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 50px 0;
+}
+
+.profile-details {
+    text-align: center; /* Pusatkan teks */
+    margin-top: 20px; /* Beri jarak atas */
+}
+
+.profile-details h3 {
+    color: #273c75;
+    margin-bottom: 10px; /* Beri jarak bawah */
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #273c75;
+    line-height: 1.6; /* Sesuaikan spasi baris */
+}
+
+.profile-image {
+    text-align: center; /* Pusatkan gambar */
+}
+
+.profile-image img {
+    border-radius: 50%; /* Agar gambar menjadi bundar */
+    width: 300px; /* Atur lebar gambar */
+    height: auto; /* Atur tinggi gambar */
+    border: 3px solid #fff; /* Tambahkan border putih */
+    margin-bottom: 20px; /* Beri jarak bawah */
+}
+
+/* Style for Portofolio image */
+section#Portofolio {
+    background-color: #b6c6f3; /* Gunakan warna yang sama dengan bagian atas */
+    color: #280881; /* Warna teks */
+    padding-bottom: 80px; /* Tambahkan padding bawah untuk memberi ruang bagi deskripsi */
+}
+
+section#Portofolio img {
+    max-width: 100%; /* Ukuran maksimum gambar */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Agar gambar tidak membesar melebihi lebar konten */
+}
+
+/* Perpendek deskripsi pada Portofolio */
+section#Portofolio .deskripsi {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Mengurangi ukuran gambar buku di menu portofolio */
+.menu ul li a[href="#Portofolio"] img {
+    max-width: 24px; /* Ukuran maksimum gambar */
+    height: auto; /* Menyesuaikan tinggi secara otomatis */
+    background-size: 24px; /* Ukuran gambar latar belakang */
+    background-repeat: no-repeat;
+}
